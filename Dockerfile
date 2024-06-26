@@ -1,4 +1,4 @@
 FROM nginx
 MAINTAINER shubham
 
-EXPOSE 80
+
