@@ -1,9 +1,5 @@
-FROM python:3
-MAINTAINER pip install django==3.2
+FROM ubuntu
+MAINTAINER shubham
 
-COPY . .
-
-RUN python manage.py migrate
-EXPOSE 8000
-CMD ["python","manage.py","runserver","0.0.0.0:8000"]
-
+RUN apt-get install -y tomcat9
+RUN apt-get install -y tomcat9-admin
